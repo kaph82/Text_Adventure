@@ -11,11 +11,11 @@ def play():
 		room.modify_player(player)
 		choose_action(room, player)
 		
-actions = OrderedDict()
-if player.inventory:
-	actions['i'] = player.print_inventory
-	actions['I'] = player.print_inventory
-	print("i: View inventory")
+	actions = OrderedDict()
+	if player.inventory:
+		actions['i'] = player.print_inventory
+		actions['I'] = player.print_inventory
+		print("i: View inventory")
 	
 
 def choose_action(room, player):
