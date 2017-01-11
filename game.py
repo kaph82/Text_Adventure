@@ -30,7 +30,7 @@ def choose_action(room, player):
 			print("Invalid action!")
 		
 	
-def get_available_actions(room, players):
+def get_available_actions(room, player):
 	actions = OrderedDict()
 	print("Choose an action: ")
 	if player.inventory:
